@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  @media screen and (max-width: 768px) {
+
+  }
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+  &__item {
+    margin: 0 20px;
+  }
+  &__item:hover {
+    color: #229C94;
+  }
+  &__search {
+    margin-left: 20px;
+    display: flex;
+    &-button {
+      margin-left: 40px;
+    }
+  }
+}
