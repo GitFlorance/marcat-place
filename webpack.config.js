@@ -5,6 +5,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const postcssNested = require('postcss-nested');
 const postcssImport = require('postcss-import');
+const postcssVars = require('postcss-simple-vars');
 
 module.exports = {
     mode: 'development',
@@ -28,7 +29,7 @@ module.exports = {
                         options: {
                             sourceMap: true,
                             postcssOptions: {
-                                plugins: [postcssNested,postcssImport],
+                                plugins: [postcssNested,postcssImport,postcssVars],
                             },
                         },
                     },

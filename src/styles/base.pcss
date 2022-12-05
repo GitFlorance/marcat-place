@@ -12,26 +12,34 @@ body, html, header, main, footer, section, article, div, span, input, img, p, a 
   padding: 0 40px;
   margin: 0 auto;
   @media screen and (max-width: 768px) {
-    max-width: 600px;
+    max-width: 700px;
+    padding: 0 20px;
   }
   @media screen and (max-width: 480px) {
-    max-width: 300px;
+    max-width: 400px;
   }
 }
 
 .m-text {
-  font: 400 14px/16px 'Work Sans', sans-serif;
-  color: #3E2F33;
+  font: 600 14px/14px 'Work Sans', sans-serif;
+  color: $darkGrey;
+  @media screen and (max-width: 550px) {
+    font: 600 11px/11px 'Work Sans', sans-serif;
+  }
+  @media screen and (max-width: 480px) {
+    font: 600 16px/16px 'Work Sans', sans-serif;
+    text-align: right;
+  }
 }
 .article {
   font: bold 40px/110px 'Work Sans', sans-serif;
-  color: #3E2F33;
+  color: $myBlack;
 }
 .b-text {
   font: bold 40px/110px 'Work Sans', sans-serif;
-  color: #3E2F33;
+  color: $myBlack;
 }
 .text {
   font: normal 14px/16px 'Work Sans', sans-serif;
-  color: #3E2F33;
+  color: $myBlack;
 }

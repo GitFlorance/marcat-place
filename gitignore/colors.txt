@@ -1,0 +1,3 @@
+//$mainColor: #3E2F33;
+//$focusColor: #229C94;
+//$greyColor: #E6E8EC;

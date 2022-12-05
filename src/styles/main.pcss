@@ -1,22 +1,83 @@
 .main {
   display: flex;
   @media screen and (max-width: 768px) {
-
   }
   @media screen and (max-width: 480px) {
     display: block;
+    position: absolute;
+    background-color: white;
+    top: 68px;
+    width: calc(100% - 40px);
+    border-top: 1px solid $lightGrey;
+    border-bottom: 1px solid $lightGrey;
+    padding-bottom: 10px;
+    transform: translateY(calc(-100% + 1px));
+    transition: 0.5s ease;
   }
   &__item {
-    margin: 0 20px;
+    padding: 10px 15px;
+
+    @media screen and (max-width: 768px) {
+      padding: 10px 8px;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 10px 0;
+    }
+  }
+  &__item:nth-child(1) {
+    color: $myBlack;
   }
   &__item:hover {
-    color: #229C94;
+    color: $myBlue;
   }
   &__search {
-    margin-left: 20px;
     display: flex;
+    margin-left: 20px;
+    border: 1px solid $lightGrey;
+    border-radius: 8px;
+    @media screen and (max-width: 768px) {
+      margin-left: 5px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 150px;
+      margin-left: auto;
+    }
+    &-input {
+      color: $darkGrey;
+      border: none;
+      padding: 5px 10px 5px;
+      border-radius: 8px;
+      width: 120px;
+      @media screen and (max-width: 768px) {
+        padding: 5px;
+        width: 80px;
+      }
+      @media screen and (max-width: 480px) {
+        width: 100px;
+      }
+    }
     &-button {
-      margin-left: 40px;
+      border: none;
+      padding: 5px 10px 5px;
+      background-color: transparent;
+      width: 44px;
+      @media screen and (max-width: 768px) {
+        padding: 5px;
+        width: 25px;
+      }
+      @media screen and (max-width: 480px) {
+        margin-left: 20px;
+      }
+    }
+    &-button  svg{
+      fill: $darkGrey;
+      height: 24px;
+      width: 24px;
+      cursor: pointer;
+      @media screen and (max-width: 768px) {
+        height: 15px;
+        width: 15px;
+      }
     }
   }
 }

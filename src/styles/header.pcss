@@ -1,14 +1,19 @@
 .header {
   width: 100%;
-  border-bottom: 1px solid #E6E8EC;
+  border-bottom: 1px solid $lightGrey;
+  background-color: white;
   @media screen and (max-width: 768px) {  }
-  @media screen and (max-width: 480px) {  }
+  @media screen and (max-width: 480px) {
+    border-bottom: none;
+  }
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     @media screen and (max-width: 768px) {  }
-    @media screen and (max-width: 480px) {  }
+    @media screen and (max-width: 480px) {
+      position: relative;
+    }
   }
 }
 

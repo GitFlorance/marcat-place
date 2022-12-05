@@ -1,18 +1,37 @@
 .logo {
+  background-color: white;
+  z-index: 4;
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
   &__img {
     padding-right: 20px;
-    border-right: 1px solid #E6E8EC;;
+    border-right: 1px solid $lightGrey;
+    @media screen and (max-width: 768px) {
+      padding-right: 10px;
+    }
+    @media screen and (max-width: 480px) {
+      border: none;
+    }
+    cursor: pointer;
     &-item {
-      width: 120px;
+      width: 140px;
       margin: 20px 0;
       @media screen and (max-width: 768px) {
-
+        width: 100px;
+        height: 28px;
       }
-      @media screen and (max-width: 480px) {
 
-      }
     }
   }
+
   &__exist {
+    margin: 19px 0;
+    display: none;
+    @media screen and (max-width: 480px) {
+    display: block;
+    }
   }
 }
