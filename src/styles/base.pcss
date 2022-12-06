@@ -1,4 +1,4 @@
-body, html, header, main, footer, section, article, div, span, input, img, p, a {
+body, html, header, button, main, footer, section, article, div, span, input, img, p, a, h1, h2, h3, h4 {
   display: block;
   box-sizing: border-box;
   padding: 0;
@@ -27,19 +27,60 @@ body, html, header, main, footer, section, article, div, span, input, img, p, a 
     font: 600 11px/11px 'Work Sans', sans-serif;
   }
   @media screen and (max-width: 480px) {
-    font: 600 16px/16px 'Work Sans', sans-serif;
-    text-align: right;
+    font: 600 12px/12px 'Work Sans', sans-serif;
   }
 }
-.article {
-  font: bold 40px/110px 'Work Sans', sans-serif;
+
+.headline {
+  font: 600 40px/48px 'Work Sans', sans-serif;
   color: $myBlack;
+  @media screen and (max-width: 480px) {
+    font: 600 32px/40px 'Work Sans', sans-serif;
+  }
 }
+
+.title{
+  font: 500 40px/48px 'Work Sans', sans-serif;
+  color: $myBlack;
+  @media screen and (max-width: 480px) {
+    font: 500 32px/40px 'Work Sans', sans-serif;
+  }
+}
+
 .b-text {
-  font: bold 40px/110px 'Work Sans', sans-serif;
+  font: 600 16px/16px 'Work Sans', sans-serif;
   color: $myBlack;
 }
+
 .text {
-  font: normal 14px/16px 'Work Sans', sans-serif;
+  font: 500 14px/16px 'Work Sans', sans-serif;
   color: $myBlack;
+}
+
+.subtitle {
+  font: 600 16px/24px 'Work Sans', sans-serif;
+  color: $myBlack;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid $lightGrey;
+  padding: 16px 24px;
+  border-radius: 90px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4px;
+}
+.line:nth-child(3) {
+  padding-bottom: 4px;
+}
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
 }

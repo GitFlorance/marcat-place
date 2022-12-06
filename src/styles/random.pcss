@@ -1,0 +1,19 @@
+.random {
+  &__container {
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      padding: 136px 0 64px;
+      width: 100%;
+    }
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 128px;
+      @media screen and (max-width: 768px) {
+        overflow-x: scroll;
+        justify-content: normal;
+      }
+    }
+  }
+}

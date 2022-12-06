@@ -1,0 +1,34 @@
+.item {
+  width: 236px;
+  @media screen and (max-width: 768px) {
+    margin-right: 36px;
+  }
+  &__img {
+    background:  linear-gradient(45deg, $myBlue 0%, $darkGrey 35%,  $lightGrey 100%);
+    height: 303px;
+    width: 236px;
+    border-radius: 16px;
+  }
+  &__info {
+    margin: 16px 0 20px;
+    &-breed {
+      border-bottom: 1px solid $lightGrey;
+    }
+    &-type .text {
+      color: $darkGrey;
+    }
+    &-date {
+      line-height: 24px !important;
+      color: $myGreen;
+      padding: 0 8px;
+      border: 2px solid $myGreen;
+      border-radius: 4px;
+    }
+  }
+}
+
+.item:nth-child(4) {
+  @media screen and (max-width: 1120px) {
+    display: none;
+  }
+}
