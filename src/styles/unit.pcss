@@ -1,0 +1,33 @@
+.unit {
+  width: 328px;
+  @media screen and (max-width: 1130px) {
+    margin-right: 36px;
+  }
+  @media screen and (max-width: 480px) {
+    margin-right: 16px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-main {
+      background:  linear-gradient(45deg, $myBlue 0%, $darkGrey 35%,  $lightGrey 100%);
+      height: 218px;
+      width: 328px;
+      border-radius: 16px;
+    }
+    &-item {
+      margin-top: 8px;
+      background:  linear-gradient(45deg, $myBlue 0%, $darkGrey 35%,  $lightGrey 100%);
+      height: 70px;
+      width: 104px;
+      border-radius: 16px;
+    }
+  }
+  &__name {
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,21 @@
+.category {
+  background-color: $lightGrey;
+  &__container {
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      padding: 136px 0 64px;
+      width: 100%;
+    }
+    &-unit {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 128px;
+      @media screen and (max-width: 1120px) {
+        overflow: hidden;
+        overflow-x: scroll;
+        justify-content: normal;
+      }
+    }
+  }
+}
