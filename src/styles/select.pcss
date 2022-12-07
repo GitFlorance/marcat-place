@@ -6,7 +6,15 @@
   border: 2px solid $lightGrey;
   border-radius: 12px;
   width: 274px;
-
+  @media screen and (max-width: 820px) {
+    width: 236px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 200px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
   &__name {
     padding: 9px 0;
     &:first-child  div {
@@ -35,6 +43,16 @@
   background-color: white;
   top: 68px;
   left: -2px;
+  z-index: 4;
+  @media screen and (max-width: 820px) {
+    width: 236px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 200px;
+  }
+  @media screen and (max-width: 480px) {
+    width: calc(100% + 4px);
+  }
 }
 .select__open > div {
   padding: 5px 0;
