@@ -1,0 +1,39 @@
+.search {
+  margin-bottom: 128px;
+  text-align: center;
+  &__settings{
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $lightGrey;
+      padding-bottom: 32px;
+    }
+  }
+  &__result {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+  &__result > div {
+    margin-bottom: 52px;
+  }
+  &__load {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border: 2px solid $lightGrey;
+    border-radius: 21px;
+    width: 138px;
+
+
+    &-name {
+    }
+    &-svg {
+      height: 18px;
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.select {
+  position: relative;
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid $lightGrey;
+  border-radius: 12px;
+  width: 274px;
+
+  &__name {
+    padding: 9px 0;
+    &:first-child  div {
+      color: $myBlack;
+    }
+  }
+  &__arrow {
+    border: 2px solid $lightGrey;
+    border-radius: 16px;
+    width: 32px;
+    height: 32px;
+    padding: 9.5px;
+    & svg {
+      vertical-align: super;
+      fill: $darkGrey;
+    }
+  }
+}
+
+.select__open {
+  padding: 5px 14px;
+  position: absolute;
+  width: 274px;
+  border: 2px solid $lightGrey;
+  border-radius: 12px;
+  background-color: white;
+  top: 68px;
+  left: -2px;
+}
+.select__open > div {
+  padding: 5px 0;
+  text-align: left;
+}
+
+.select__arrow-open {
+  transform: rotate(180deg);
+}
